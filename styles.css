@@ -1,0 +1,97 @@
+:root {
+  --bg: #090d24;
+  --panel: #121a3f;
+  --text: #f4f7ff;
+  --accent: #7be0ff;
+  --accent-2: #b57bff;
+  --ok: #89ffb2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top right, #1f2d7a 0%, var(--bg) 55%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+}
+
+.tagline {
+  max-width: 680px;
+  margin: 0.8rem auto 1.6rem;
+  opacity: 0.9;
+}
+
+button {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border: none;
+  color: #06112f;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main {
+  width: min(1100px, 92%);
+  margin: 0 auto 3rem;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card,
+.practice {
+  background: rgba(18, 26, 63, 0.82);
+  border: 1px solid rgba(123, 224, 255, 0.2);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+
+.practice form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.8rem;
+}
+
+input[type="number"] {
+  margin-top: 0.3rem;
+  background: #050b22;
+  border: 1px solid #4252a8;
+  color: var(--text);
+  border-radius: 8px;
+  padding: 0.4rem 0.5rem;
+}
+
+#feedback {
+  color: var(--ok);
+  font-weight: 600;
+}
+
+#logList {
+  padding-left: 1.2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  opacity: 0.8;
+}
