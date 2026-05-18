@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.U.S.I.C Stellar Spectrum</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>M.U.S.I.C Stellar Spectrum</h1>
+    <p class="tagline">A student-first music learning galaxy: theory, rhythm, ear training, and creativity.</p>
+    <button id="startBtn">Start Your Journey</button>
+  </header>
+
+  <main>
+    <section class="cards" id="modules">
+      <article class="card">
+        <h2>🎼 Theory Nebula</h2>
+        <p>Learn notes, scales, chords, and harmony through bite-sized lessons.</p>
+      </article>
+      <article class="card">
+        <h2>🥁 Rhythm Orbit</h2>
+        <p>Practice timing with guided metronome drills and pattern challenges.</p>
+      </article>
+      <article class="card">
+        <h2>🎧 Ear Constellation</h2>
+        <p>Train your ears to recognize intervals, chords, and melodies faster.</p>
+      </article>
+      <article class="card">
+        <h2>🎹 Creation Station</h2>
+        <p>Compose mini pieces and track progress with achievable milestones.</p>
+      </article>
+    </section>
+
+    <section class="practice">
+      <h2>Quick Practice Tracker</h2>
+      <form id="practiceForm">
+        <label>
+          Minutes practiced today:
+          <input type="number" id="minutes" min="0" max="600" required />
+        </label>
+        <button type="submit">Log Practice</button>
+      </form>
+      <p id="feedback" aria-live="polite"></p>
+      <ul id="logList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Built for students exploring music one star at a time.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
